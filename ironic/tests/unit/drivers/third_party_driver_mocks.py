@@ -204,6 +204,7 @@ if not sushy:
         BOOT_SOURCE_TARGET_PXE='Pxe',
         BOOT_SOURCE_TARGET_HDD='Hdd',
         BOOT_SOURCE_TARGET_CD='Cd',
+        BOOT_SOURCE_TARGET_FLOPPY='Floppy',
         BOOT_SOURCE_TARGET_BIOS_SETUP='BiosSetup',
         SYSTEM_POWER_STATE_ON='on',
         SYSTEM_POWER_STATE_POWERING_ON='powering on',

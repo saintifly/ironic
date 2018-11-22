@@ -786,3 +786,11 @@ class DatabaseVersionTooOld(IronicException):
 
 class AgentConnectionFailed(IronicException):
     _msg_fmt = _("Connection to agent failed: %(reason)s")
+
+
+class IBMCError(DriverOperationError):
+    _msg_fmt = _("IBMC exception occurred. Error: %(error)s")
+
+
+class IBMCConnectionError(IBMCError):
+    _msg_fmt = _("IBMC connection failed for node %(node)s: %(error)s")

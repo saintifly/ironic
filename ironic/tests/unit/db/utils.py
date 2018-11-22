@@ -584,3 +584,12 @@ def get_test_bios_setting_setting_list():
         {'name': 'hyperthread', 'value': 'enabled'},
         {'name': 'numlock', 'value': 'off'}
     ]
+
+
+def get_test_ibmc_info():
+    return {
+        "ibmc_address": "https://example.com",
+        "ibmc_system_id": "/redfish/v1/Systems/FAKESYSTEM",
+        "ibmc_username": "username",
+        "ibmc_password": "password"
+    }
