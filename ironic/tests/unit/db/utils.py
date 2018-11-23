@@ -544,3 +544,12 @@ def create_test_node_traits(traits, **kw):
     :returns: a list of test NodeTrait DB objects.
     """
     return [create_test_node_trait(trait=trait, **kw) for trait in traits]
+
+
+def get_test_ibmc_info():
+    return {
+        "ibmc_address": "https://example.com",
+        "ibmc_system_id": "/redfish/v1/Systems/FAKESYSTEM",
+        "ibmc_username": "username",
+        "ibmc_password": "password"
+    }

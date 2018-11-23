@@ -772,3 +772,11 @@ class InstanceRescueFailure(IronicException):
 class InstanceUnrescueFailure(IronicException):
     _msg_fmt = _('Failed to unrescue instance %(instance)s for node '
                  '%(node)s: %(reason)s')
+
+
+class IBMCError(IronicException):
+    _msg_fmt = _("IBMC exception occurred. Error: %(error)s")
+
+
+class IBMCConnectionError(IBMCError):
+    _msg_fmt = _("IBMC connection failed for node %(node)s: %(error)s")
