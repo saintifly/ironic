@@ -26,6 +26,7 @@ Hardware Types
   drivers/snmp
   drivers/ucs
   drivers/xclarity
+  drivers/ibmc
 
 Changing Hardware Types and Interfaces
 --------------------------------------
